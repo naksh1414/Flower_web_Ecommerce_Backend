@@ -7,7 +7,7 @@ import bodyParser from "body-parser";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import productRoutes from "./routes/productRoutes.js";
-import authRoutes from "./routes/authRoutes.js"; // Import auth routes
+import authRoutes from "./routes/authRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 const app = express();
