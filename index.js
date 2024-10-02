@@ -46,7 +46,7 @@ mongoose
 
 // Routes
 app.use("/products", productRoutes);
-app.use("/auth", authRoutes); // Add auth routes
+app.use("/auth", authRoutes);
 app.use("/orders", orderRoutes);
 
 // Start server
