@@ -28,7 +28,6 @@ router.post(
         name: req.body.name,
         price: req.body.price,
         image: result.secure_url,
-        userId: req.user.id, // Access userId from req.user
         description: req.body.description,
         public_id: result.public_id,
       });
