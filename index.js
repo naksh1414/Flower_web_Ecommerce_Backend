@@ -21,19 +21,19 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 // Session setup
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    store: MongoStore.create({ mongoUrl: process.env.DB_URL }),
-    cookie: {
-      maxAge: 24 * 60 * 60 * 1000,
-      httpOnly: true,
-      secure: process.env.NODE_ENV,
-    },
-  })
-);
+// app.use(
+//   session({
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false,
+//     store: MongoStore.create({ mongoUrl: process.env.DB_URL }),
+//     cookie: {
+//       maxAge: 24 * 60 * 60 * 1000,
+//       httpOnly: true,
+//       secure: process.env.NODE_ENV,
+//     },
+//   })
+// );
 
 // MongoDB Connection
 mongoose
